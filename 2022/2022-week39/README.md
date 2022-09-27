@@ -1,3 +1,3 @@
 # Week 39 plot
 
-![](plots/plot.png)
+![](plots/plot_w39.png)
