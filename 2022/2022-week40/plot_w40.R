@@ -5,8 +5,6 @@
 library(tidyverse)
 library(lubridate)
 library(ggstream)
-library(patchwork)
-
 
 # Download and read datasets ----
 # Sources
@@ -63,7 +61,8 @@ ggplot(category_count_by_year, aes(x = year,
     subtitle = "Cada vez más productos de tecnología en Product Hunt incluyen la etiqueta 'Open Source'.\nEn la siguiente gráfica se resaltan las etiquetas más comunes asociadas a estos productos.",
     x = NULL,
     y = NULL,
-    fill = NULL
+    fill = NULL,
+    caption = "Fuente: components.one | Elaborado por Camilo Martínez (@camartinezbu)"
   ) +
   scale_x_continuous(breaks = c(2014:2021)) +
   scale_fill_manual(
@@ -85,6 +84,7 @@ ggplot(category_count_by_year, aes(x = year,
     plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
     plot.title.position = "plot",
     plot.subtitle = element_text(size = 9, hjust = 0.5),
+    plot.caption = element_text(size = 7),
     panel.background = element_blank(),
     panel.grid.major.x = element_line(color = "#444444"),
     panel.grid.minor.x = element_blank(),
