@@ -1,3 +1,3 @@
-# Week 40 plot
+# Week 41 plot
 
 ![](plots/plot_w41.png)
