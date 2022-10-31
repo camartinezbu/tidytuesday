@@ -27,7 +27,7 @@ grunt_count <- dialogue |>
 plot <- ggplot(grunt_count, aes(x = episode_count, y = 1, fill = grunt_total)) +
   with_outer_glow(geom_tile(), colour = "#DD635B", sigma = 15) +
   labs(
-    title = "\n\n\n\nNumero de gruñidos en el guión",
+    title = "\n\n\n\nNúmero de gruñidos en el guión",
     x = NULL,
     y = NULL,
     fill = NULL,
@@ -45,7 +45,7 @@ plot <- ggplot(grunt_count, aes(x = episode_count, y = 1, fill = grunt_total)) +
   )) +
   theme_minimal() +
   theme(
-    text = element_text(colour = "#bbbbbb", family = "IBM Plex Mono"),
+    text = element_text(colour = "#cccccc", family = "IBM Plex Mono"),
     plot.title = element_text(family = "IBM Plex Mono Medium",
                               size = 12, hjust = 0.5),
     plot.caption = element_text(size = 6, hjust = 0.5),
@@ -54,7 +54,7 @@ plot <- ggplot(grunt_count, aes(x = episode_count, y = 1, fill = grunt_total)) +
     panel.grid.minor = element_blank(),
     axis.text.y = element_blank(),
     axis.text.x = element_text(family = "IBM Plex Mono Medium",
-                               colour = "#bbbbbb", size = 7, angle = 90),
+                               colour = "#cccccc", size = 7, angle = 90),
     legend.key.height = unit(4, "mm"),
     legend.text = element_text(size = 6),
     legend.margin = margin(t = 5, r = 0, b = -5, l = 0),
