@@ -37,7 +37,7 @@ paranormal_activity <- horror |>
                                     "Actividad\nParanormal 3",
                                     "Actividad\nParanormal 4",
                                     "Actividad\nParanormal:\nLos marcados",
-                                    "Arcividad\nParanormal:\nLa dimensión\nfantasma",
+                                    "Actividad\nParanormal:\nLa dimensión\nfantasma",
                                     "Actividad\nParanormal:\nVínculos\nfamiliares")))
 
 ## Screen dimensions ----
