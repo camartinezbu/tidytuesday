@@ -85,7 +85,7 @@ create_chord_plot <- function(data, title, order = NULL) {
   } else {
     custom_order <- order
   }
-
+  
   circos.par(gap.after = c(rep(2, nrow(data)/2 -1), rep(10, 2)), start.degree = -3)
   chordDiagram(data, annotationTrack = c("grid"),
                order = custom_order,
@@ -105,7 +105,7 @@ create_chord_plot <- function(data, title, order = NULL) {
   
 }
 
-png(filename = "2022/2022-week48/plots/plot_w48_en.png",
+png(filename = "2022/2022-week48/plots/plot_w48.png",
     width = 1800,
     height = 2000,
     units = "px")
@@ -114,9 +114,9 @@ layout(matrix(c(1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 8, 8), ncol = 3, byrow = TRUE),
        heights = c(3.5, 5, 5, 1))
 
 plot.new()
-text(0.5, 0.75, "Colombia's goals\nin FIFA World Cups", 
-     cex = 14, family = "Kanit Black")
-text(0.5, 0.25, "Only in 2014 and 2018, Colombia scored more goals than its opponents.",
+text(0.5, 0.75, "Goles de Colombia en\nMundiales de fútbol", 
+     cex = 12, family = "Kanit Black")
+text(0.5, 0.25, "Únicamente en los mundiales de 2014 y 2018,\nColombia hizo más goles de los que le anotaron.",
      cex = 5, family = "Kanit")
 
 create_chord_plot(wcmatches_col_1962, title = "1962")
@@ -133,8 +133,7 @@ create_chord_plot(wcmatches_col_2014, title = "2014")
 create_chord_plot(wcmatches_col_2018, title = "2018")
 
 plot.new()
-text(0.5, 0.5, "Source: Kaggle | Created by Camilo Martínez (@camartinezbu@fosstodon.org)",
+text(0.5, 0.5, "Fuente: Kaggle | Elaborado por Camilo Martínez (@camartinezbu)",
      family = "Kanit Regular", cex = 4)
 
 dev.off()
-
