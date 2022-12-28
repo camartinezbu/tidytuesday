@@ -116,7 +116,7 @@ layout(matrix(c(1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 8, 8), ncol = 3, byrow = TRUE),
 plot.new()
 text(0.5, 0.75, "Colombia's goals\nin FIFA World Cups", 
      cex = 14, family = "Kanit Black")
-text(0.5, 0.25, "Only in 2014 and 2018, Colombia scored more goals than it's opponents.",
+text(0.5, 0.25, "Only in 2014 and 2018, Colombia scored more goals than its opponents.",
      cex = 5, family = "Kanit")
 
 create_chord_plot(wcmatches_col_1962, title = "1962")
