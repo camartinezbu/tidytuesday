@@ -3,8 +3,7 @@
 
 # Load packages ----
 library(tidyverse)
-library(tidygraph)
-library(ggraph)
+library(circlize)
 
 # Download and read datasets ----
 # Sources
