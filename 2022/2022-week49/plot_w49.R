@@ -68,7 +68,7 @@ plot_gg(my_plot, multicore = TRUE, width = 8, height = 8,
         shadow = FALSE, scale = 75,
         windowsize = 1200,
         background = "#ffffff",
-        theta = 0, phi = 30, zoom = 0.25)Ele
+        theta = 0, phi = 30, zoom = 0.25)
 
 # Export plot
 
