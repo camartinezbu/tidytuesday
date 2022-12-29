@@ -43,7 +43,7 @@ us_state_retail <- state_retail |>
                              #            "Health and\nPersonal Care",
                              #            "Building Materials\nand Supplies Dealers",
                              #            "Food and\nBeverage"))
-                             labels = c("Pendas de vestir\ny accesorios",
+                             labels = c("Prendas de vestir\ny accesorios",
                                         "Muebles\ny hogar",
                                         "Electrónicos y\naparatos",
                                         "Deportes y\npasatiempos",
