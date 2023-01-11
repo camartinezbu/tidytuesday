@@ -129,12 +129,12 @@ anim <- ggplot() +
   labs(
     title = "Sismos en Colombia\ndurante 2022",
     subtitle = "{closest_state}",
-    caption = "Fuente: Servicio Geológico Colombiano | Elaborado por Camilo Martínez (@camartinezbu)\nNota: El mapa incluye únicamente los sismos que ocurrieron dentro de las fronteras terrestres del país.",
+    caption = "Fuente: Servicio Geológico Colombiano | Elaborado por Camilo Martínez (@camartinezbu)\nNota: El mapa incluye únicamente los sismos de magnitud de 3 o más\nque ocurrieron dentro de las fronteras terrestres del país.",
     size = "Magnitud")
   # labs(
   #   title = "Earthquakes in Colombia\nduring 2022",
   #   subtitle = "{closest_state}",
-  #   caption = "Source: Servicio Geológico Colombiano | Created by Camilo Martínez (@camartinezbu@fosstodon)\nNote: The map only includes the earthquakes inside the country's terrestrial border.",
+  #   caption = "Source: Servicio Geológico Colombiano | Created by Camilo Martínez (@camartinezbu@fosstodon)\nNote: The map only includes the earthquakes with magnitude 3 or higher\ninside the country's terrestrial border.",
   #   size = "Magnitude")
 
   
