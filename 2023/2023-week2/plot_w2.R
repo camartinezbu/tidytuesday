@@ -28,9 +28,9 @@ grid <- data.frame(matrix(NA,    # Create empty data frame
   filter(!(row == 1 & column == 12))
 
 ggplot(grid) +
-  geom_point_svg(aes(x = column*1.25, y = row), svg = paste(readLines("~/Downloads/test.svg"), collapse = "\n")) +
-  geom_point_svg(x = 5*1.25, y = 23.3, svg = paste(readLines("~/Downloads/test.svg"), collapse = "\n")) +
-  annotate("text", x = 7*1.25, y = 23.3, label = "= 100 sightings", family = "Jost Medium") +
+  geom_point_svg(aes(x = column*1.25, y = row), svg = paste(readLines("2023/2023-week2/data/test.svg"), collapse = "\n")) +
+  geom_point_svg(x = 5*1.25, y = 23.3, svg = paste(readLines("2023/2023-week2/data/test.svg"), collapse = "\n")) +
+  annotate("text", x = 7*1.25, y = 23.3, label = "= 100 avistamientos", family = "Jost Medium") +
   labs(
     title = "El junco pizarroso fue el ave más avistada en\nEstados Unidos durante la temporada 2021*",
     subtitle = "En total se registraron 25.093 avistamientos en este periodo",
