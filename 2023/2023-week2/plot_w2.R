@@ -31,24 +31,24 @@ ggplot(grid) +
   geom_point_svg(aes(x = column*1.25, y = row), svg = paste(readLines("~/Downloads/test.svg"), collapse = "\n")) +
   geom_point_svg(x = 5*1.25, y = 23.3, svg = paste(readLines("~/Downloads/test.svg"), collapse = "\n")) +
   annotate("text", x = 7*1.25, y = 23.3, label = "= 100 sightings", family = "Jost Medium") +
-  # labs(
-  #   title = "El junco pizarrozo fue el ave más avistada en\nEstados Unidos durante la temporada 2021*",
-  #   subtitle = "En total se registraron 25.093 avistamientos en este periodo",
-  #   caption = "Fuente: feederwatch.org | Elaborado por Camilo Martínez (@camartinezbu)\n*La temporada 2021 corresponde al periodo comprendido entre noviembre de 2020 y abril de 2021",
-  #   x = NULL,
-  #   y = NULL
-  # ) +
   labs(
-    title = "The dark eyed junco was the most observed bird\nin the United States during the 2021 season*",
-    subtitle = "25.093 individuals were observed in this period",
-    caption = "Source: feederwatch.org | Created by Camilo Martínez (@camartinezbu@fosstodon.org)\n*The 2021 season begins on november 2020 and ends on april 2021",
+    title = "El junco pizarroso fue el ave más avistada en\nEstados Unidos durante la temporada 2021*",
+    subtitle = "En total se registraron 25.093 avistamientos en este periodo",
+    caption = "Fuente: feederwatch.org | Elaborado por Camilo Martínez (@camartinezbu)\n*La temporada 2021 corresponde al periodo comprendido entre noviembre de 2020 y abril de 2021",
     x = NULL,
     y = NULL
   ) +
+  # labs(
+  #   title = "The dark eyed junco was the most observed bird\nin the United States during the 2021 season*",
+  #   subtitle = "25.093 individuals were observed in this period",
+  #   caption = "Source: feederwatch.org | Created by Camilo Martínez (@camartinezbu@fosstodon.org)\n*The 2021 season begins on november 2020 and ends on april 2021",
+  #   x = NULL,
+  #   y = NULL
+  # ) +
   coord_cartesian(xlim = c(0, 16.5), ylim = c(0, 25), expand = FALSE) +
   theme(
     text = element_text(family = "Jost Medium"),
-    plot.title = element_text(hjust = 0.5, family = "Jost Black", size = 17),
+    plot.title = element_text(hjust = 0.5, family = "Jost Black", size = 18),
     plot.title.position = "plot",
     plot.subtitle = element_text(hjust = 0.5),
     plot.caption = element_text(hjust = 0.5, size = 8),
@@ -63,7 +63,7 @@ ggplot(grid) +
   
 # Export plot
 
-ggsave("2023/2023-week2/plots/plot_w2_en.png", 
+ggsave("2023/2023-week2/plots/plot_w2.png", 
        width = 1800, 
        height = 1600, 
        units = "px")
