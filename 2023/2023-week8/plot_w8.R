@@ -73,7 +73,7 @@ ggplot(bob_ross_clean, aes(x = season, y = Color_used, fill = color_hex)) +
 
 # Export plot
 
-ggsave("2023/2023-week8/plots/plot_8_en.png", 
+ggsave("2023/2023-week8/plots/plot_w8_en.png", 
        width = 2000, 
        height = 1800, 
        units = "px")
