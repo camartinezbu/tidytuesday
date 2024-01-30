@@ -69,7 +69,7 @@ ggplot(data = processed_data, aes(x = rgn11nm, y = size_flag, fill = perc)) +
                       labels = scales::percent) + 
   labs(
     # title = "La región del noreste del Reino Unido\ntiene una mayor proporción de pueblos con\nalta privación de ingresos",
-    title = "The North East region of the UK\nhas a greater proportion of towns\nwith high income deprovation",
+    title = "The North East region of the UK\nhas a greater proportion of towns\nwith high income deprivation",
     caption = social_caption,
     x = NULL,
     y = NULL,
