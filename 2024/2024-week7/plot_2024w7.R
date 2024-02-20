@@ -37,7 +37,7 @@ mastodon_icon <- "&#xf4f6"
 mastodon_username <- "camartinezbu"
 mastodon_server <- "fosstodon.org"
 social_caption <- glue::glue(
-  "<span style='color: {text_color}'>Fuente: {source_text}</span><br>
+  "<span style='color: {text_color}'>Source: {source_text}</span><br>
   <span style='font-family:\"Font Awesome 6 Brands\";
                 color: {highlight_color}'>{github_icon};</span>
   <span style='color: {text_color}'>{github_username}</span>
