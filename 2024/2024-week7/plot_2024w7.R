@@ -37,7 +37,7 @@ mastodon_icon <- "&#xf4f6"
 mastodon_username <- "camartinezbu"
 mastodon_server <- "fosstodon.org"
 social_caption <- glue::glue(
-  "<span style='color: {text_color}'>Source: {source_text}</span><br>
+  "<span style='color: {text_color}'>Fuente: {source_text}</span><br>
   <span style='font-family:\"Font Awesome 6 Brands\";
                 color: {highlight_color}'>{github_icon};</span>
   <span style='color: {text_color}'>{github_username}</span>
@@ -52,27 +52,27 @@ social_caption <- glue::glue(
   <span style='color: {text_color}'>{mastodon_username}@<span><span style='color: {text_color}'>{mastodon_server}</span>"
 )
 
-ggradar(gifts_gender_clean,
+ggradar(gifts_gender_clean_es,
         grid.max = 100, grid.min = 0, grid.mid = 50,
         font.radar = "Gill Sans", base.size = 10,
         group.point.size = 3, group.line.width = 0.8,
-        # axis.labels = c("Dulces", "Flores", "Joyas",
-        #                 "Tarjetas\nde felicitación", "Salidas",
-        #                 "Ropa", "Tarjetas\n de regalo"),
-        axis.labels = c("Candy", "Flowers", "Jewelry",
-                        "Greeting Cards", "Evening Out",
-                        "Clothing", "Gift Cards"),
+        axis.labels = c("Dulces", "Flores", "Joyas",
+                        "Tarjetas\nde felicitación", "Salidas",
+                        "Ropa", "Tarjetas\n de regalo"),
+        # axis.labels = c("Candy", "Flowers", "Jewelry",
+        #                 "Greeting Cards", "Evening Out",
+        #                 "Clothing", "Gift Cards"),
         axis.label.size = 3.5,
         label.gridline.min = FALSE,
         gridline.mid.colour = "grey",
         grid.label.size = 4,
 ) +
   labs(
-    # title = "Los hombres compran flores\ny las mujeres compran dulces\nen San Valentín" ,
-    title = "Men buy flowers\nand women buy candy\non Valentine's Day" ,
+    title = "Los hombres compran flores\ny las mujeres compran dulces\nen San Valentín" ,
+    # title = "Men buy flowers\nand women buy candy\non Valentine's Day" ,
     caption = social_caption,
-    # color = "Porcentaje de gasto en cada regalo"
-    color = "Percentage of spending in each gift"
+    color = "Porcentaje de personas que compraron cada regalo\nentre quienes celebran este día"
+    # color = "Percentage of people who spent on each gift\namong the ones that celebrate this holiday"
   ) +
   scale_color_manual(
     values = c("#a6206a90", "#2f939590")
@@ -105,7 +105,7 @@ ggradar(gifts_gender_clean,
   guides(colour = guide_legend(title.position = "top"))
 
 # Export plot
-ggsave("2024/2024-week7/plots/plot_2024w7_en.png", 
+ggsave("2024/2024-week7/plots/plot_2024w7.png", 
        width = 2000, 
        height = 1800, 
        units = "px")
