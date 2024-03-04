@@ -34,7 +34,8 @@ ggplot(clean_data, aes(x = year_group, y = funded, color = factor(group))) +
                              text_color = "black",
                              highlight_color = "#1351a4",
                              language = "en"),
-    y = "Monto financiado (USD)",
+    # y = "Monto financiado (USD)",
+    y = "Grant amount (USD)",
     x = NULL
   ) +
   scale_y_continuous(labels = scales::dollar) +
