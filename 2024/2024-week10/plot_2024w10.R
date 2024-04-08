@@ -27,7 +27,7 @@ trash_weight_summary <- data |>
   bind_cols(image_url = trash_images) |> 
   mutate(label_es = paste0("<img src='.", image_url, "' width=50 /><br><span style='font-family: Montserrat'><b>", 
                         Name, "</b><br>Desde ", Min_Year, "</span>"
-  )) +
+  )) |>  
   mutate(label_en = paste0("<img src='.", image_url, "' width=50 /><br><span style='font-family: Montserrat'><b>", 
                         Name, "</b><br>Since ", Min_Year, "</span>"
   ))
@@ -46,14 +46,15 @@ ggplot(data = trash_weight_summary,
                      position = "top") +
   scale_y_discrete(expand = c(0, 0)) +
   labs(
-    # title = "La iniciativa Mr. Trash Wheel ha recolectado\n2.945 toneladas de basura en Baltimore",
-    title = "Mr. Trash Wheel initiative has collected\n2.945 tons of trash in Baltimore",
-    # subtitle = "Mr. Trash Wheel es un interceptor de basura semiautónomo que se ubica al final\nde un río o arroyo. Actualmente hay 4 de ellos en funcionamiento.",
-    subtitle = "Mr. Trash Wheel is a semi-autonomous trash interceptor that is placed at the end\nof a river, stream or other outfall. Currently, there are 4 of them functioning.",
+    title = "La iniciativa Mr. Trash Wheel ha recolectado\n2.945 toneladas de basura en Baltimore",
+    # title = "Mr. Trash Wheel initiative has collected\n2.945 tons of trash in Baltimore",
+    subtitle = "Mr. Trash Wheel es un interceptor de basura semiautónomo que se ubica al final\nde un río o arroyo. Actualmente hay 4 de ellos en funcionamiento.",
+    # subtitle = "Mr. Trash Wheel is a semi-autonomous trash interceptor that is placed at the end\nof a river, stream or other outfall. Currently, there are 4 of them functioning.",
     y = NULL,
-    x = "Tons",
+    x = "Toneladas",
+    # x = "Tons",
     caption = cmbrand::social_caption(source = "Mr. Trash Wheel Baltimore Healthy Harbor Initiative",
-                                      text_color = "black", highlight_color = "#7cc04d", language = "en")
+                                      text_color = "black", highlight_color = "#7cc04d")
   ) +
   theme(
     plot.title = element_text(family = "Montserrat", face = "bold", 
@@ -77,7 +78,7 @@ ggplot(data = trash_weight_summary,
   
 
 # Export plot
-ggsave("2024/2024-week10/plots/plot_2024w10_en.png",
+ggsave("2024/2024-week10/plots/plot_2024w10.png",
        width = 2000,
        height = 1800,
        units = "px")
